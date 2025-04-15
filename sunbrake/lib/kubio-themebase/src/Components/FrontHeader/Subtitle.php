@@ -46,7 +46,7 @@ class Subtitle extends \ColibriWP\Theme\Components\FrontHeader\Subtitle {
 
 				),
 				"{$prefix}localProps.content" => array(
-					'default' => Defaults::get( $prefix . 'localProps.content' ),
+					'default' =>  __( 'Lorem ipsum dolor sit amet, at mei dolore tritani repudiandae. In his nemore temporibus consequuntur, vim ad prima vivendum consetetur.', 'sunbrake' ),
 					'control' => array(
 						'label'       => Translations::get( 'subtitle' ),
 						'type'        => 'input',

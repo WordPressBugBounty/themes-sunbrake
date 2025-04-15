@@ -43,7 +43,7 @@ class Title extends ComponentBase {
 
 				),
 				"{$prefix}localProps.content" => array(
-					'default' => Defaults::get( $prefix . 'localProps.content' ),
+					'default' => __( 'Manage. Create. Inspire.', 'sunbrake' ),
 					'control' => array(
 						'label'       => Translations::get( 'title' ),
 						'type'        => 'input',

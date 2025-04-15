@@ -128,14 +128,16 @@ sunbrake_theme()
 			'width'       => 150,
 			'height'      => 70,
 		)
-	)
-	->register_menus(
-		array(
-			'header-menu' => esc_html__( 'Header Menu', 'sunbrake' ),
-			'footer-menu' => esc_html__( 'Footer Menu', 'sunbrake' ),
-		)
 	);
 
+add_action('after_setup_theme', function() {
+    sunbrake_theme()->register_menus(
+        array(
+            'header-menu' => esc_html__( 'Header Menu', 'sunbrake' ),
+            'footer-menu' => esc_html__( 'Footer Menu', 'sunbrake' ),
+        )
+    );
+}, 1);
 if ( ! apply_filters( 'kubio_is_enabled', false ) ) {
 	sunbrake_assets()
 		->registerTemplateScript(

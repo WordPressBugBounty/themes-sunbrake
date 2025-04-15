@@ -245,10 +245,10 @@ $sunbrake_gradients = array(
 
 );
 
-$sunbrake_title                         = __( 'Manage. Create. Inspire.', 'sunbrake' );
-$sunbrake_subtitle                      = __( 'Lorem ipsum dolor sit amet, at mei dolore tritani repudiandae. In his nemore temporibus consequuntur, vim ad prima vivendum consetetur.', 'sunbrake' );
-$sunbrake_theme_action_button           = __( 'Explore now', 'sunbrake' );
-$sunbrake_theme_action_button_secondary = __( 'Contact us', 'sunbrake' );
+$sunbrake_title                         =  'Manage. Create. Inspire.';
+$sunbrake_subtitle                      =  'Lorem ipsum dolor sit amet, at mei dolore tritani repudiandae. In his nemore temporibus consequuntur, vim ad prima vivendum consetetur.';
+$sunbrake_theme_action_button           =  'View Features';
+$sunbrake_theme_action_button_secondary =  'Contact Us';
 
 $defaults = array(
 	'default_icon'                      => $sunbrake_theme_svg_icons['fort-awesome'],
@@ -726,33 +726,7 @@ $defaults = array(
 	'blog_post_thumb_placeholder_color' => 'rgba(176,190,197)',
 	'blog_show_post_thumb_placeholder'  => true,
 	'blog_posts_per_row'                => 2,
-	'blog_enable_masonry'               => true,
-
-	'front_page_designs'                => array(
-		array(
-			'name'    => __( 'Modern', 'sunbrake' ),
-			'index'   => 1,
-			'preview' => 'front-page-1.jpg',
-		),
-
-		array(
-			'name'    => __( 'Fullscreen', 'sunbrake' ),
-			'index'   => 2,
-			'preview' => 'front-page-2.jpg',
-		),
-
-		array(
-			'name'    => __( 'Classic', 'sunbrake' ),
-			'index'   => 3,
-			'preview' => 'front-page-3.jpg',
-		),
-
-		array(
-			'name'    => __( '', 'sunbrake' ),
-			'index'   => 4,
-			'preview' => 'admin/ai-icon.svg',
-		),
-	),
+	'blog_enable_masonry'               => true
 );
 
 if ( ! file_exists( __DIR__ . '/exported-settings.php' ) ) {
